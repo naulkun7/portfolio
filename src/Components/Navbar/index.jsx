@@ -1,7 +1,32 @@
-import styles from "./styles.module.css";
+import styles from "./styles.module.css"
+import logo from "../../../assets/img/img_home.png"
 
 function Navbar() {
-  return <nav className={styles.nav_container}>div</nav>;
+  return (
+    <nav className={styles.nav_container}>
+      <div className={styles.nav_left}>
+        <a href="#home">
+          <img src={logo} alt="hình tui" />
+          <span>Hi, Luân Nguyễn is me ❤</span>
+        </a>
+      </div>
+      <div className={styles.nav_right}>
+        <a href="#about" className={styles.nav_link}>
+          <span>01.</span>About
+        </a>
+        <a href="#experience" className={styles.nav_link}>
+          <span>02.</span>Experience
+        </a>
+        <a href="#projects" className={styles.nav_link}>
+          <span>03.</span>Projects
+        </a>
+        <a href="#contact" className={styles.nav_link}>
+          <span>04.</span>Contact
+        </a>
+        <button className={styles.nav_resume_btn}>Resume</button>
+      </div>
+    </nav>
+  )
 }
 
-export default Navbar;
+export default Navbar
