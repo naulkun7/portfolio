@@ -118,7 +118,6 @@ header {
 .project p {
   color: #B8B8B8;
   font-size: 18px;
-  letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
@@ -216,7 +215,7 @@ header {
 
 .proj_imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, var(--dark-navy) 0%, var(--dark-slate) 120%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -247,15 +246,14 @@ header {
 .proj_txtx h4 {
   font-size: 30px;
   font-weight: 700;
-  letter-spacing: 0.8px;
   line-height: 1.1em;
 }
 
-.proj_txtx span {
+.proj_txtx p {
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
-  letter-spacing: 0.8px;
+  margin-bottom: 15px;
 }
 
 

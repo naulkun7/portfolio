@@ -62,7 +62,7 @@ function Project() {
           <Col>
             <h2>Projects</h2>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              <Nav variant="pills" defaultActiveKey="/home">
+              <Nav variant="pills" defaultActiveKey="first">
                 <Nav.Item>
                   <Nav.Link eventKey="first">Page 1</Nav.Link>
                 </Nav.Item>
