@@ -6,8 +6,11 @@ function Navbar() {
     <nav className={styles.nav_container}>
       <div className={styles.nav_left}>
         <a href="#home">
-          <img src={logo} alt="hình tui" />
-          <span>Hi, Luân Nguyễn is me ❤</span>
+          {/* <img src={logo} alt="hình tui" /> */}
+          <span>
+            {/* Hi <br /> */}
+            Nguyễn Hoàng Luân ❤
+          </span>
         </a>
       </div>
       <div className={styles.nav_right}>

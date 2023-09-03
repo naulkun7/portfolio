@@ -7,7 +7,7 @@ import Home from "./Sections/Home"
 import { useLocalStorage } from "@uidotdev/usehooks"
 
 function App() {
-  let [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light")
+  let [theme, setTheme] = useLocalStorage("dark" ? "dark" : "light")
   let toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light"
     setTheme(newTheme)
