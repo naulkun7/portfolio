@@ -10,18 +10,27 @@ function Navbar() {
       </div>
       <div className={styles.nav_right}>
         <a href="#about" className={styles.nav_link}>
-          <span>01.</span>About
+          About
+        </a>
+        <a href="#skills" className={styles.nav_link}>
+          Skills
         </a>
         <a href="#experience" className={styles.nav_link}>
-          <span>02.</span>Experience
+          Experience
         </a>
-        <a href="#projects" className={styles.nav_link}>
-          <span>03.</span>Projects
+        <a href="#project" className={styles.nav_link}>
+          Projects
         </a>
         <a href="#contact" className={styles.nav_link}>
-          <span>04.</span>Contact
+          Contact
         </a>
-        <button className={styles.nav_resume_btn}>Resume</button>
+        <a
+          href="../../../public/Other/Resume_NguyenHoangLuan.pdf"
+          download=""
+          className={styles.nav_resume_btn}
+        >
+          Resume
+        </a>
       </div>
     </nav>
   )

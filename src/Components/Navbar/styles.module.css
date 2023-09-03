@@ -19,9 +19,10 @@
 
 .nav_left>a {
   color: var(--green);
-  font-size: var(--fz-xxl);
+  font-size: var(--fz-heading);
   font-weight: 700;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
+  letter-spacing: 2px;
   display: flex;
   align-items: center;
 }
@@ -35,7 +36,7 @@
 }
 
 .nav_link {
-  font-size: var(--fz-sm);
+  font-size: var(--fz-xl);
   color: var(--lightest-slate);
   cursor: pointer;
   margin-left: 26px;
@@ -52,7 +53,7 @@
 
 .nav_resume_btn {
   outline: none;
-  font-size: var(--fz-xs);
+  font-size: var(--fz-md);
   background: transparent;
   border: 1px solid var(--green);
   color: var(--green);

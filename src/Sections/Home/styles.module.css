@@ -1,8 +1,15 @@
 /************ home Css ************/
 .home {
-  margin-top: 20px;
-  padding: 160px 0 120px 0;
-  height: 100vh;
+  &::before {
+    display: block;
+    content: "";
+    margin-top: -60px;
+    height: 350px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  height: 120vh;
 }
 
 .home_content {
@@ -14,7 +21,6 @@
   letter-spacing: 0.8px;
   padding: 8px 10px;
   background: linear-gradient(90.21deg, var(--green) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;

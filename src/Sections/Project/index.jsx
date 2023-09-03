@@ -1,5 +1,6 @@
 import projImg1 from "./img/rps_prj.png"
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap"
+import styles from "./styles.module.css"
 
 import ProjectCard from "./projectCard"
 
@@ -56,7 +57,7 @@ function Project() {
   ]
 
   return (
-    <section className="project">
+    <section className={styles.project} id="project">
       <Container>
         <Row>
           <Col>

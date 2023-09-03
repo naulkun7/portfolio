@@ -8,8 +8,10 @@ import ContactBar from "./Components/ContactBar"
 
 // Sections
 import Home from "./Sections/Home"
-import Skills from "./Sections/Skills"
+import Skills from "./Sections/SkillsnCerti"
 import Project from "./Sections/Project"
+import Contact from "./Sections/Contact"
+import Experience from "./Sections/Experience"
 
 function App() {
   let [theme, setTheme] = useLocalStorage("dark" ? "dark" : "light")
@@ -30,7 +32,9 @@ function App() {
       <div className="app_section_container">
         <Home />
         <Skills />
+        <Experience />
         <Project />
+        <Contact />
       </div>
       <ContactBar />
       <Footer />

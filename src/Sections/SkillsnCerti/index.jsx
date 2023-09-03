@@ -36,13 +36,30 @@ function Skills() {
         <Row>
           <Col className={styles.col}>
             <div className={styles.skill_bx}>
-              <h2>Skills</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Dolorem adipisci, fugit libero, quia vero non deserunt eum ipsum
-                amet maiores voluptas quae dolorum quisquam porro, illum eveniet
-                blanditiis laboriosam. Ratione?
-              </p>
+              <h2>Skills and Certificate</h2>
+              <ul className={styles.certiList}>
+                <li className={styles.certiItem}>
+                  <h3>CCNA: Introduction to Networks</h3>
+                  <span>
+                    December 2022
+                    <br /> Cisco
+                  </span>
+                </li>
+                <li className={styles.certiItem}>
+                  <h3>CCNA: Introduction to Networks</h3>
+                  <span>
+                    December 2022
+                    <br /> Cisco
+                  </span>
+                </li>
+                <li className={styles.certiItem}>
+                  <h3>CCNA: Introduction to Networks</h3>
+                  <span>
+                    December 2022
+                    <br /> Cisco
+                  </span>
+                </li>
+              </ul>
               <Carousel
                 responsive={responsive}
                 infinite={true}

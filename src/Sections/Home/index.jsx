@@ -49,7 +49,7 @@ function Home() {
   }
 
   return (
-    <section className={styles.home}>
+    <section className={styles.home} id="home">
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7} className={styles.home_content}>

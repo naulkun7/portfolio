@@ -1,7 +1,14 @@
-/************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
-  position: relative;
+  &::before {
+    display: block;
+    content: "";
+    margin-top: -160px;
+    height: 160px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  height: 100vh;
 }
 
 .col {
@@ -20,6 +27,8 @@
 .skill h2 {
   font-size: 45px;
   font-weight: 700;
+  font-family: var(--font-sans);
+  margin-bottom: 20px;
 }
 
 .skill p {
@@ -37,4 +46,13 @@
 
 .skill_slider .item {
   font-size: 80px;
+}
+
+.certiList {
+  text-align: left;
+}
+
+.certiItem {
+  font-size: var(--fz-xxl);
+  margin-bottom: 30px;
 }
