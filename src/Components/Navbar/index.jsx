@@ -1,16 +1,11 @@
 import styles from "./styles.module.css"
-import logo from "../../../assets/img/img_home.png"
 
 function Navbar() {
   return (
     <nav className={styles.nav_container}>
       <div className={styles.nav_left}>
         <a href="#home">
-          {/* <img src={logo} alt="hình tui" /> */}
-          <span>
-            {/* Hi <br /> */}
-            Nguyễn Hoàng Luân ❤
-          </span>
+          <span>Nguyễn Hoàng Luân ❤</span>
         </a>
       </div>
       <div className={styles.nav_right}>

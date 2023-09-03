@@ -1,10 +1,15 @@
 import "./index.css"
-import "./App.css"
+import { useLocalStorage } from "@uidotdev/usehooks"
+
+// Components
 import Navbar from "./Components/Navbar/index.jsx"
 import Footer from "./Components/Footer/index.jsx"
 import ContactBar from "./Components/ContactBar"
+
+// Sections
 import Home from "./Sections/Home"
-import { useLocalStorage } from "@uidotdev/usehooks"
+import Skills from "./Sections/Skills"
+import Project from "./Sections/Project"
 
 function App() {
   let [theme, setTheme] = useLocalStorage("dark" ? "dark" : "light")
@@ -24,6 +29,8 @@ function App() {
       </header>
       <div className="app_section_container">
         <Home />
+        <Skills />
+        <Project />
       </div>
       <ContactBar />
       <Footer />

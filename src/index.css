@@ -5,6 +5,7 @@
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   --dark-navy: #020c1b;
   --navy: #0a192f;
+  --reverse-navy: #f5e6d0;
   --light-navy: #112240;
   --lightest-navy: #233554;
   --transparent-navy: #0a192fd9;
@@ -12,6 +13,7 @@
   --dark-slate: #495670;
   --slate: #8892b0;
   --light-slate: #a8b2d1;
+  --reverse-light-slate: #5d4d2e;
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
   --green: #64ffda;
@@ -29,6 +31,7 @@
 [data-theme="light"] {
   --dark-navy: #e3f3e4;
   --navy: #f5e6d0;
+  --reverse-navy: #0a192f;
   --light-navy: #eeddbf;
   --lightest-navy: #ccdae7;
   --transparent-navy: #e3f3e4d9;
@@ -36,6 +39,7 @@
   --dark-slate: #baa98f;
   --slate: #776d4f;
   --light-slate: #5d4d2e;
+  --reverse-light-slate: #a8b2d1;
   --lightest-slate: #332921;
   --white: #191e00;
   --green: #9b00d9;
@@ -69,6 +73,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .theme-toggle {
