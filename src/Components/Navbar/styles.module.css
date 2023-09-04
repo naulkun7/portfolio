@@ -19,7 +19,7 @@
 
 .nav_left>a {
   color: var(--green);
-  font-size: var(--fz-heading);
+  font-size: var(--fz-xxl);
   font-weight: 700;
   font-family: var(--font-sans);
   letter-spacing: 2px;
@@ -53,7 +53,7 @@
 
 .nav_resume_btn {
   outline: none;
-  font-size: var(--fz-md);
+  font-size: var(--fz-lg);
   background: transparent;
   border: 1px solid var(--green);
   color: var(--green);

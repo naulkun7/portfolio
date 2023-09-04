@@ -1,14 +1,6 @@
 /************ home Css ************/
 .home {
-  &::before {
-    display: block;
-    content: "";
-    margin-top: -60px;
-    height: 350px;
-    visibility: hidden;
-    pointer-events: none;
-  }
-
+  padding: 200px 0 140px 0;
   height: 120vh;
 }
 
