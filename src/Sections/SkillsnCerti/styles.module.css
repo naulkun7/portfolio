@@ -1,13 +1,9 @@
-.container {
-  max-width: 1140px;
-}
-
 .skill {
   &::before {
     display: block;
     content: "";
-    margin-top: -130px;
-    height: 130px;
+    margin-top: -120px;
+    height: 120px;
     visibility: hidden;
     pointer-events: none;
   }
@@ -19,11 +15,11 @@
 }
 
 .skill_bx {
-  background: var(--reverse-navy);
+  background: var(--navy);
   border-radius: 64px;
   text-align: center;
-  padding: 80px 80px;
-  color: var(--navy);
+  padding: 40px 80px;
+  color: var(--light-slate);
 }
 
 .skill h2 {
@@ -69,6 +65,7 @@
   margin-bottom: 10px;
   font-weight: 500;
   font-size: var(--fz-xl);
+  color: var(--green);
   text-decoration: underline;
 }
 
@@ -78,6 +75,8 @@
 }
 
 .certiLogo {
-  width: 150px;
-  height: 100px;
+  width: 120px;
+  height: 50px;
+  background: var(--background-certi);
+  border-radius: 10px;
 }

@@ -10,7 +10,7 @@ function Project() {
       <Container className={styles.container}>
         <Row>
           <Col>
-            <h2>Projects</h2>
+            <h2>PROJECTS</h2>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav variant="pills" defaultActiveKey="first">
                 <Nav.Item>

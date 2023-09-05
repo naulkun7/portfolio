@@ -13,7 +13,7 @@ function About() {
   return (
     <div className={styles.about} id="about">
       <Container className={styles.container}>
-        <h2 className={styles.heading}>About me!!!</h2>
+        <h2 className={styles.heading}>STORY AND ME </h2>
         <Row>
           <Col xs={12}>
             <p className={styles.about_text}>

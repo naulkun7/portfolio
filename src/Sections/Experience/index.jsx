@@ -9,7 +9,7 @@ function Experience() {
   return (
     <section className={styles.experience} id="experience">
       <div className={styles.container}>
-        <h2 className={styles.mainTitle}>Experience</h2>
+        <h2 className={styles.mainTitle}>EXPERIENCE</h2>
         <div className={styles.outer}>
           <div className={styles.left}>
             {constant.experiences.map((experience, index) => (

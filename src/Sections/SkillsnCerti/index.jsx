@@ -37,7 +37,7 @@ function Skills() {
         <Row>
           <Col className={styles.col}>
             <div className={styles.skill_bx}>
-              <h2>Skills and Certificate</h2>
+              <h2>SKILLS AND CERTIFICATE</h2>
               <Row>
                 {constant.certificate.map((certificate, index) => {
                   return (

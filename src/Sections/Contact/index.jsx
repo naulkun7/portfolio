@@ -1,43 +1,129 @@
+import React, { useState } from "react"
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
 import { Container, Row, Col } from "react-bootstrap"
 import styles from "./styles.module.css"
+import ReactCardFlip from "react-card-flip"
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft"
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward"
+import SendIcon from "@mui/icons-material/Send"
 
 function Contact() {
+  const [isFlipped, setIsFlipped] = useState(false)
+
+  const handleClick = () => {
+    setIsFlipped(!isFlipped)
+  }
+
   return (
     <div className={styles.contact} id="contact">
       <Container className={styles.container}>
-        <h2 className={styles.contact_title}>Contact</h2>
+        <h2 className={styles.contact_title}>CONTACT</h2>
         <Row className={styles.row}>
           <Col xs={12} xl={6}>
-            <Form>
-              <Form.Group className="mb-2" controlId="formBasicEmail">
-                <Form.Label>Your Name</Form.Label>
-                <Form.Control type="text" placeholder="Full Name" />
-                <Form.Text className={styles.span}>
-                  I'll never share your information with anyone else.
-                </Form.Text>
-              </Form.Group>
-              <Form.Group className="mb-2" controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Subject</Form.Label>
-                <Form.Control type="text" placeholder="Subject" />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Message</Form.Label>
-                <Form.Control as="textarea" placeholder="Message" rows={3} />
-              </Form.Group>
-              <Button
-                className={styles.submit_form_btn}
-                variant="primary"
-                type="submit"
-              >
-                Submit
-              </Button>
-            </Form>
+            <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+              {/* Front */}
+              <div className={styles.card_face_front}>
+                <h3>NGUYEN HOANG LUAN</h3>
+                <p>
+                  Email:{" "}
+                  <a href="mailto:luannguyenn.2k2@gmail.com">
+                    luannguyenn.2k2@gmail.com
+                  </a>
+                </p>
+                <p>
+                  Phone: <a href="tel:+84989807564">(+84)98 980 7564</a>
+                </p>
+                <ul className={styles.social}>
+                  <li className={styles.social_item}>
+                    <a
+                      href="https://www.facebook.com/luan.nguyen.007/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li className={styles.social_item}>
+                    <a
+                      href="https://github.com/naulkun7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </li>
+                  <li className={styles.social_item}>
+                    <a
+                      href="https://www.linkedin.com/in/luannguyen-2k2/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li className={styles.social_item}>
+                    <a
+                      href="https://zalo.me/0989807564"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fa-solid fa-z"></i>
+                    </a>
+                  </li>
+                </ul>
+                <button
+                  className={styles.submit_form_btn}
+                  onClick={handleClick}
+                >
+                  <span>Send me a message</span>
+                  <SendIcon />
+                </button>
+              </div>
+              {/* Back */}
+              <div className={styles.card_face_back}>
+                <Form>
+                  <Form.Group className="mb-2" controlId="formBasicEmail">
+                    <Form.Label>Your Name</Form.Label>
+                    <Form.Control type="text" placeholder="Full Name" />
+                    <Form.Text className={styles.span}>
+                      I'll never share your information with anyone else.
+                    </Form.Text>
+                  </Form.Group>
+                  <Form.Group className="mb-2" controlId="formBasicEmail">
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control type="email" placeholder="Enter email" />
+                  </Form.Group>
+                  <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Label>Subject</Form.Label>
+                    <Form.Control type="text" placeholder="Subject" />
+                  </Form.Group>
+                  <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Label>Message</Form.Label>
+                    <Form.Control
+                      as="textarea"
+                      placeholder="Message"
+                      rows={3}
+                    />
+                  </Form.Group>
+                  <Button
+                    className={styles.submit_form_btn}
+                    variant="primary"
+                    type="submit"
+                  >
+                    <span>Submit</span>
+                    <ArrowUpwardIcon />
+                  </Button>
+                  <Button
+                    className={styles.submit_form_btn}
+                    onClick={handleClick}
+                  >
+                    <span>Go back</span>
+                    <ChevronLeftIcon />
+                  </Button>
+                </Form>
+              </div>
+            </ReactCardFlip>
           </Col>
           <Col xs={12} xl={6}>
             <iframe

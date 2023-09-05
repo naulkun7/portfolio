@@ -12,11 +12,11 @@ function Navbar() {
         <a href="#about" className={styles.nav_link}>
           About
         </a>
-        <a href="#skills" className={styles.nav_link}>
-          Skills
-        </a>
         <a href="#experience" className={styles.nav_link}>
           Experience
+        </a>
+        <a href="#skills" className={styles.nav_link}>
+          Skills
         </a>
         <a href="#project" className={styles.nav_link}>
           Projects

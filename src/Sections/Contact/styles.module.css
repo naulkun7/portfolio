@@ -40,7 +40,16 @@
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  margin-right: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.submit_form_btn span {
+  margin-right: 10px;
+}
+
 
 .submit_form_btn:hover {
   background-color: transparent;
@@ -58,4 +67,40 @@
 .map {
   border: 0px;
   border-radius: 10px;
+}
+
+/* card flip */
+.card_face_front {
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.card_face_back {
+  height: 480px;
+}
+
+.flip_btn span {
+  margin-right: 10px;
+}
+
+
+
+.social {
+  padding-left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+
+.social_item {
+  margin-right: 30px;
+}
+
+.social_item a {
+  display: inline-block;
+  font-size: 40px;
 }
