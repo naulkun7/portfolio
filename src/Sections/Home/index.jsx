@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight"
-import headerImg from "./header-img.jpeg"
 import styles from "./styles.module.css"
 
 function Home() {
@@ -50,7 +49,7 @@ function Home() {
 
   return (
     <section className={styles.home} id="home">
-      <Container>
+      <Container className={styles.container}>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7} className={styles.home_content}>
             <span className={styles.tagline}>Welcome to my PORTFOLIO</span>
@@ -70,7 +69,7 @@ function Home() {
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={headerImg} alt="header img" />
+            <img src={"./img/home/header.jpeg"} alt="header img" />
           </Col>
         </Row>
       </Container>

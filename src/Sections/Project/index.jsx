@@ -1,64 +1,13 @@
-import projImg1 from "./img/rps_prj.png"
+// import projImg1 from "./img/rps_prj.png"
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap"
 import styles from "./styles.module.css"
-
+import constant from "../../constant.json"
 import ProjectCard from "./projectCard"
 
 function Project() {
-  const projects = [
-    {
-      title: "Project 1",
-      description: "Lorem ipsum dolor ",
-      skill: "HTML, CSS, JS",
-      imgUrl: projImg1,
-      githubUrl: "#",
-      linkUrl: "#",
-    },
-    {
-      title: "Project 1",
-      description: "Lorem ipsum dolor ",
-      skill: "HTML, CSS, JS",
-      imgUrl: projImg1,
-      githubUrl: "#",
-      linkUrl: "#",
-    },
-    {
-      title: "Project 1",
-      description: "Lorem ipsum dolor ",
-      skill: "HTML, CSS, JS",
-      imgUrl: projImg1,
-      githubUrl: "#",
-      linkUrl: "#",
-    },
-    {
-      title: "Project 1",
-      description: "Lorem ipsum dolor ",
-      skill: "HTML, CSS, JS",
-      imgUrl: projImg1,
-      githubUrl: "#",
-      linkUrl: "#",
-    },
-    {
-      title: "Project 1",
-      description: "Lorem ipsum dolor ",
-      skill: "HTML, CSS, JS",
-      imgUrl: projImg1,
-      githubUrl: "#",
-      linkUrl: "#",
-    },
-    {
-      title: "Project 1",
-      description: "Lorem ipsum dolor ",
-      skill: "HTML, CSS, JS",
-      imgUrl: projImg1,
-      githubUrl: "#",
-      linkUrl: "#",
-    },
-  ]
-
   return (
     <section className={styles.project} id="project">
-      <Container>
+      <Container className={styles.container}>
         <Row>
           <Col>
             <h2>Projects</h2>
@@ -77,7 +26,7 @@ function Project() {
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
-                    {projects.map((project, index) => {
+                    {constant.projects.map((project, index) => {
                       return <ProjectCard key={index} {...project} />
                     })}
                   </Row>

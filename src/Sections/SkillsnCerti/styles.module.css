@@ -1,3 +1,7 @@
+.container {
+  max-width: 1140px;
+}
+
 .skill {
   &::before {
     display: block;
@@ -11,10 +15,6 @@
   /* height: 100vh; */
 }
 
-.col {
-  padding: 0 50px;
-}
-
 .skill_bx {
   background: var(--reverse-navy);
   border-radius: 64px;
@@ -25,14 +25,21 @@
 }
 
 .skill h2 {
-  font-size: 45px;
+  font-size: var(--fz-heading);
   font-weight: 700;
   font-family: var(--font-sans);
   margin-bottom: 20px;
 }
 
-.skill p {
-  font-size: 18px;
+.skill h3 {
+  font-size: var(--fz-xxl);
+  font-weight: 700;
+  font-family: var(--font-sans);
+  margin-bottom: 20px;
+}
+
+.skill span {
+  font-size: var(--fz-md);
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px 0 75px 0;
@@ -42,6 +49,7 @@
   width: 80%;
   margin: 0 auto;
   position: relative;
+  z-index: 50;
 }
 
 .skill_slider .item {

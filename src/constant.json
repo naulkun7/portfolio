@@ -1,4 +1,18 @@
 {
+  "about": [
+    {
+      "imgUrl": "./img/about/img_about.png",
+      "desc": "Im 20"
+    },
+    {
+      "imgUrl": "./img/about/about_friend.jpeg",
+      "desc": "Luan and Friends"
+    },
+    {
+      "imgUrl": "./img/about/img_about.png",
+      "desc": "Im 60"
+    }
+  ],
   "experiences": [
     {
       "company": "Microsoft",
@@ -39,20 +53,52 @@
   ],
   "projects": [
     {
-      "title": "Ecommerce",
-      "image": "./images/project_1.png",
-      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "skills": ["React", "Express", "MongoDB"],
-      "github": "/",
-      "link": ""
+      "title": "Project 1",
+      "description": "Lorem ipsum dolor ",
+      "skill": "HTML, CSS, JS",
+      "imgUrl": "./img/project/rps_prj.png",
+      "githubUrl": "#",
+      "linkUrl": "#"
     },
     {
-      "title": "Spotify",
-      "image": "./images/project_2.png",
-      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "skills": ["React", "Express", "MongoDB"],
-      "github": "/",
-      "link": "/"
+      "title": "Project 1",
+      "description": "Lorem ipsum dolor ",
+      "skill": "HTML, CSS, JS",
+      "imgUrl": "./img/project/rps_prj.png",
+      "githubUrl": "#",
+      "linkUrl": "#"
+    },
+    {
+      "title": "Project 1",
+      "description": "Lorem ipsum dolor ",
+      "skill": "HTML, CSS, JS",
+      "imgUrl": "./img/project/rps_prj.png",
+      "githubUrl": "#",
+      "linkUrl": "#"
+    },
+    {
+      "title": "Project 1",
+      "description": "Lorem ipsum dolor ",
+      "skill": "HTML, CSS, JS",
+      "imgUrl": "./img/project/rps_prj.png",
+      "githubUrl": "#",
+      "linkUrl": "#"
+    },
+    {
+      "title": "Project 1",
+      "description": "Lorem ipsum dolor ",
+      "skill": "HTML, CSS, JS",
+      "imgUrl": "./img/project/rps_prj.png",
+      "githubUrl": "#",
+      "linkUrl": "#"
+    },
+    {
+      "title": "Project 1",
+      "description": "Lorem ipsum dolor ",
+      "skill": "HTML, CSS, JS",
+      "imgUrl": "./img/project/rps_prj.png",
+      "githubUrl": "#",
+      "linkUrl": "#"
     }
   ]
 }

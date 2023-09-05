@@ -18,11 +18,11 @@
   display: flex;
   justify-content: center;
   height: calc(100vh - 200px);
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .mainTitle {
-  font-size: 45px;
+  font-size: var(--fz-heading);
   font-weight: 700;
   font-family: var(--font-sans);
   text-align: center;

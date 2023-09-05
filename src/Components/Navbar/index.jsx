@@ -25,7 +25,7 @@ function Navbar() {
           Contact
         </a>
         <a
-          href="../../../public/Other/Resume_NguyenHoangLuan.pdf"
+          href="./other/Resume_NguyenHoangLuan.pdf"
           download=""
           className={styles.nav_resume_btn}
         >

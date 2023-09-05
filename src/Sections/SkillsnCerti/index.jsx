@@ -18,7 +18,7 @@ function Skills() {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 4,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -32,7 +32,7 @@ function Skills() {
 
   return (
     <section className={styles.skill} id="skills">
-      <Container>
+      <Container className={styles.container}>
         <Row>
           <Col className={styles.col}>
             <div className={styles.skill_bx}>
@@ -63,7 +63,14 @@ function Skills() {
               <Carousel
                 responsive={responsive}
                 infinite={true}
+                autoPlay={true}
                 className={styles.skill_slider}
+                removeArrowOnDeviceType={[
+                  "desktop",
+                  "superLargeDesktop",
+                  "tablet",
+                  "mobile",
+                ]}
               >
                 <div className={styles.item}>
                   <HTMLIcon />

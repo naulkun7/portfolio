@@ -14,6 +14,7 @@ function Experience() {
           <div className={styles.left}>
             {constant.experiences.map((experience, index) => (
               <div
+                key={index}
                 className={
                   index === currentIndex
                     ? `${styles.tab} ${styles.active_tab}`
@@ -40,8 +41,8 @@ function Experience() {
             <p className={styles.duration}>
               {constant.experiences[currentIndex].duration}
             </p>
-            {constant.experiences[currentIndex].desc.map((point) => (
-              <p className={styles.desc}>
+            {constant.experiences[currentIndex].desc.map((point, index) => (
+              <p key={index} className={styles.desc}>
                 <PlayArrowIcon /> {point}
               </p>
             ))}

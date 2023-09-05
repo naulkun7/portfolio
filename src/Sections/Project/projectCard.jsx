@@ -1,5 +1,7 @@
 import { Col } from "react-bootstrap"
 import styles from "./styles.module.css"
+import React from "react"
+// import img from "./img/renderImg"
 
 function ProjectCard({
   title,

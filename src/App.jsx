@@ -12,6 +12,7 @@ import Skills from "./Sections/SkillsnCerti"
 import Project from "./Sections/Project"
 import Contact from "./Sections/Contact"
 import Experience from "./Sections/Experience"
+import About from "./Sections/About"
 
 function App() {
   let [theme, setTheme] = useLocalStorage("dark" ? "dark" : "light")
@@ -31,8 +32,9 @@ function App() {
       </header>
       <div className="app_section_container">
         <Home />
-        <Skills />
+        <About />
         <Experience />
+        <Skills />
         <Project />
         <Contact />
       </div>

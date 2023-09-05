@@ -1,11 +1,11 @@
-/************ home Css ************/
+.container {
+  max-width: 1140px;
+}
+
+
 .home {
   padding: 200px 0 140px 0;
   height: 120vh;
-}
-
-.home_content {
-  padding: 0 60px;
 }
 
 .home .tagline {
@@ -16,7 +16,7 @@
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
-  color: var(--navy);
+  color: var(--light-navy);
 }
 
 .home h1 {
@@ -60,8 +60,8 @@
 
 .home img {
   animation: updown 3s linear infinite;
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
 }
 
 @keyframes updown {
