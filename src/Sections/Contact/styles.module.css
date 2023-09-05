@@ -1,0 +1,38 @@
+.container {
+  max-width: 1140px;
+  font-family: var(--font-sans);
+}
+
+.contact {
+  font-size: var(--fz-heading);
+  text-align: center;
+  font-weight: 700;
+}
+
+.row {
+  position: relative;
+  z-index: 50;
+  padding: 50px 0;
+}
+
+.submit_form_btn {
+  outline: none;
+  font-size: var(--fz-lg);
+  background: transparent;
+  border: 1px solid var(--green);
+  color: var(--green);
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.submit_form_btn:hover {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+.map {
+  border: 0px;
+  border-radius: 10px;
+}
