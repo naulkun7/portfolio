@@ -1,19 +1,51 @@
-import React, { useState } from "react"
+import styles from "./styles.module.css"
+
+// React
+import React, { useState, useRef } from "react"
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
 import { Container, Row, Col } from "react-bootstrap"
-import styles from "./styles.module.css"
 import ReactCardFlip from "react-card-flip"
+import emailjs from "@emailjs/browser"
+import SweetAlert2 from "react-sweetalert2"
+
+// Icon
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft"
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward"
 import SendIcon from "@mui/icons-material/Send"
 
 function Contact() {
+  // Flip card
   const [isFlipped, setIsFlipped] = useState(false)
-
   const handleClick = () => {
     setIsFlipped(!isFlipped)
   }
+
+  // Send email
+  const form = useRef()
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        "service_4nrsuwl",
+        "template_tc1m2zb",
+        form.current,
+        "gu85wvWqI4NrJNToy"
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+          console.log("Send email successfully!")
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
+  }
+
+  // SweetAlert2
+  const [swalProps, setSwalProps] = useState({})
 
   return (
     <div className={styles.contact} id="contact">
@@ -82,25 +114,38 @@ function Contact() {
               </div>
               {/* Back */}
               <div className={styles.card_face_back}>
-                <Form>
+                <Form onSubmit={sendEmail} ref={form}>
                   <Form.Group className="mb-2" controlId="formBasicEmail">
                     <Form.Label>Your Name</Form.Label>
-                    <Form.Control type="text" placeholder="Full Name" />
+                    <Form.Control
+                      name="user_name"
+                      type="text"
+                      placeholder="Full Name"
+                    />
                     <Form.Text className={styles.span}>
                       I'll never share your information with anyone else.
                     </Form.Text>
                   </Form.Group>
                   <Form.Group className="mb-2" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Control
+                      name="user_email"
+                      type="email"
+                      placeholder="Enter email"
+                    />
                   </Form.Group>
                   <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Subject</Form.Label>
-                    <Form.Control type="text" placeholder="Subject" />
+                    <Form.Control
+                      name="message_subject"
+                      type="text"
+                      placeholder="Subject"
+                    />
                   </Form.Group>
                   <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Message</Form.Label>
                     <Form.Control
+                      name="message"
                       as="textarea"
                       placeholder="Message"
                       rows={3}
@@ -110,10 +155,19 @@ function Contact() {
                     className={styles.submit_form_btn}
                     variant="primary"
                     type="submit"
+                    value="Send"
+                    onClick={() => {
+                      setSwalProps({
+                        show: true,
+                        title: "Success!",
+                        text: "Thank you for your message!",
+                      })
+                    }}
                   >
                     <span>Submit</span>
                     <ArrowUpwardIcon />
                   </Button>
+                  <SweetAlert2 {...swalProps} />
                   <Button
                     className={styles.submit_form_btn}
                     onClick={handleClick}
