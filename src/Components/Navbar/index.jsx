@@ -1,5 +1,4 @@
 import styles from "./styles.module.css"
-import resumepdf from "/other/Resume_NguyenHoangLuan.pdf?url"
 
 function Navbar() {
   return (
@@ -26,8 +25,8 @@ function Navbar() {
           Contact
         </a>
         <a
-          href={resumepdf}
-          download="Resume_NguyenHoangLuan.pdf"
+          href="other/Resume_NguyenHoangLuan.pdf"
+          target="_blank"
           className={styles.nav_resume_btn}
         >
           Resume
