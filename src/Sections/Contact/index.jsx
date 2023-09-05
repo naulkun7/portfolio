@@ -5,16 +5,16 @@ import styles from "./styles.module.css"
 
 function Contact() {
   return (
-    <div id="contact">
+    <div className={styles.contact} id="contact">
       <Container className={styles.container}>
-        <h2 className={styles.contact}>Contact</h2>
+        <h2 className={styles.contact_title}>Contact</h2>
         <Row className={styles.row}>
           <Col xs={12} xl={6}>
             <Form>
               <Form.Group className="mb-2" controlId="formBasicEmail">
                 <Form.Label>Your Name</Form.Label>
                 <Form.Control type="text" placeholder="Full Name" />
-                <Form.Text className="text-muted">
+                <Form.Text className={styles.span}>
                   I'll never share your information with anyone else.
                 </Form.Text>
               </Form.Group>

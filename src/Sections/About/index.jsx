@@ -11,12 +11,12 @@ function About() {
     },
   }
   return (
-    <div id="about">
+    <div className={styles.about} id="about">
       <Container className={styles.container}>
         <h2 className={styles.heading}>About me!!!</h2>
         <Row>
           <Col xs={12}>
-            <p className={styles.about}>
+            <p className={styles.about_text}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis
               voluptate suscipit vero eaque recusandae reprehenderit qui
               dolorum, cumque ratione, non aspernatur commodi, perferendis

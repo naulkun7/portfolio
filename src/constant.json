@@ -100,5 +100,35 @@
       "githubUrl": "#",
       "linkUrl": "#"
     }
+  ],
+  "certificate": [
+    {
+      "title": "Intermediate JS: Building Front End Components",
+      "date": "Mar 2023",
+      "author": "Educative",
+      "logo": "./img/certificate/Educative.svg",
+      "link": "https://www.educative.io/verify-certificate/DR5gxyCn6GOX9znJXcRXvRNEjAYEcG"
+    },
+    {
+      "title": "Certificate 1",
+      "date": "2021-08-01",
+      "author": "Codecademy",
+      "logo": "./img/certificate/codecademy.svg",
+      "link": "https://www.educative.io/courses/intermediate-javascript-building-frontend-components"
+    },
+    {
+      "title": "Certificate 1",
+      "date": "2021-08-01",
+      "author": "Cisco",
+      "logo": "./img/certificate/cisco.svg",
+      "link": "https://www.educative.io/courses/intermediate-javascript-building-frontend-components"
+    },
+    {
+      "title": "Certificate 1",
+      "date": "2021-08-01",
+      "author": "Cisco",
+      "logo": "./img/certificate/cisco.svg",
+      "link": "https://www.educative.io/courses/intermediate-javascript-building-frontend-components"
+    }
   ]
 }

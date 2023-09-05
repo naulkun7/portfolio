@@ -11,6 +11,8 @@
     visibility: hidden;
     pointer-events: none;
   }
+
+  height: 100vh;
 }
 
 .link {

@@ -1,9 +1,25 @@
+.contact {
+  &::before {
+    display: block;
+    content: "";
+    margin-top: -115px;
+    height: 115px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .container {
   max-width: 1140px;
   font-family: var(--font-sans);
 }
 
-.contact {
+.contact_title {
   font-size: var(--fz-heading);
   text-align: center;
   font-weight: 700;
@@ -30,6 +46,13 @@
   background-color: transparent;
   color: var(--white);
   border: 1px solid var(--white);
+}
+
+.span {
+  color: var(--lightest-slate);
+  font-size: var(--fz-sm);
+  font-style: italic;
+  font-weight: 200;
 }
 
 .map {

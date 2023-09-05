@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import styles from "./styles.module.css"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
+import constant from "../../constant.json"
 
 // Icons
 import ReactIcon from "./icons/react.jsx"
@@ -37,29 +38,29 @@ function Skills() {
           <Col className={styles.col}>
             <div className={styles.skill_bx}>
               <h2>Skills and Certificate</h2>
-              <ul className={styles.certiList}>
-                <li className={styles.certiItem}>
-                  <h3>CCNA: Introduction to Networks</h3>
-                  <span>
-                    December 2022
-                    <br /> Cisco
-                  </span>
-                </li>
-                <li className={styles.certiItem}>
-                  <h3>CCNA: Introduction to Networks</h3>
-                  <span>
-                    December 2022
-                    <br /> Cisco
-                  </span>
-                </li>
-                <li className={styles.certiItem}>
-                  <h3>CCNA: Introduction to Networks</h3>
-                  <span>
-                    December 2022
-                    <br /> Cisco
-                  </span>
-                </li>
-              </ul>
+              <Row>
+                {constant.certificate.map((certificate, index) => {
+                  return (
+                    <Col key={index} xs={12} md={6}>
+                      <div className={styles.certiItem}>
+                        <a href={certificate.link} target="_blank">
+                          {certificate.title}
+                        </a>
+                        <p>
+                          Issued: {certificate.date}
+                          <br />
+                          {certificate.author}
+                        </p>
+                        <img
+                          src={certificate.logo}
+                          className={styles.certiLogo}
+                          alt={certificate.author}
+                        />
+                      </div>
+                    </Col>
+                  )
+                })}
+              </Row>
               <Carousel
                 responsive={responsive}
                 infinite={true}

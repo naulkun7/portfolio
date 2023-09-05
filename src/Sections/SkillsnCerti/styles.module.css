@@ -6,21 +6,23 @@
   &::before {
     display: block;
     content: "";
-    margin-top: -160px;
-    height: 160px;
+    margin-top: -130px;
+    height: 130px;
     visibility: hidden;
     pointer-events: none;
   }
 
-  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .skill_bx {
   background: var(--reverse-navy);
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
-  margin-top: -20px;
+  padding: 80px 80px;
   color: var(--navy);
 }
 
@@ -28,7 +30,7 @@
   font-size: var(--fz-heading);
   font-weight: 700;
   font-family: var(--font-sans);
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .skill h3 {
@@ -56,11 +58,26 @@
   font-size: 80px;
 }
 
-.certiList {
-  text-align: left;
-}
 
 .certiItem {
+  text-align: left;
   font-size: var(--fz-xxl);
   margin-bottom: 30px;
+}
+
+.certiItem a {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: var(--fz-xl);
+  text-decoration: underline;
+}
+
+.certiItem p {
+  font-size: var(--fz-md);
+  margin-bottom: 0px;
+}
+
+.certiLogo {
+  width: 150px;
+  height: 100px;
 }
