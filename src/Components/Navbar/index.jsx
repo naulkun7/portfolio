@@ -26,7 +26,6 @@ function Navbar() {
         </a>
         <a
           href="./other/Resume_NguyenHoangLuan.pdf"
-          download=""
           className={styles.nav_resume_btn}
         >
           Resume
