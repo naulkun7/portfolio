@@ -69,7 +69,9 @@ function Home() {
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={"./img/home/header.jpeg"} alt="header img" />
+            <div>
+              <img src={"./img/home/header.jpeg"} alt="header img" />
+            </div>
           </Col>
         </Row>
       </Container>

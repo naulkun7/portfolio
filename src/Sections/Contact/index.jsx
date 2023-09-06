@@ -48,12 +48,16 @@ function Contact() {
   const [swalProps, setSwalProps] = useState({})
 
   return (
-    <div className={styles.contact} id="contact">
+    <section className={styles.contact} id="contact">
       <Container className={styles.container}>
         <h2 className={styles.contact_title}>CONTACT</h2>
         <Row className={styles.row}>
-          <Col xs={12} xl={6}>
-            <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+          <Col xs={12} md={6}>
+            <ReactCardFlip
+              className={styles.card}
+              isFlipped={isFlipped}
+              flipDirection="vertical"
+            >
               {/* Front */}
               <div className={styles.card_face_front}>
                 <h3>NGUYEN HOANG LUAN</h3>
@@ -151,35 +155,40 @@ function Contact() {
                       rows={3}
                     />
                   </Form.Group>
-                  <Button
-                    className={styles.submit_form_btn}
-                    variant="primary"
-                    type="submit"
-                    value="Send"
-                    onClick={() => {
-                      setSwalProps({
-                        show: true,
-                        title: "Success!",
-                        text: "Thank you for your message!",
-                      })
-                    }}
+                  <Form.Group
+                    className={styles.submit_form_btn_group}
+                    controlId="form-group-id"
                   >
-                    <span>Submit</span>
-                    <ArrowUpwardIcon />
-                  </Button>
-                  <SweetAlert2 {...swalProps} />
-                  <Button
-                    className={styles.submit_form_btn}
-                    onClick={handleClick}
-                  >
-                    <span>Go back</span>
-                    <ChevronLeftIcon />
-                  </Button>
+                    <Button
+                      className={styles.submit_form_btn}
+                      variant="primary"
+                      type="submit"
+                      value="Send"
+                      onClick={() => {
+                        setSwalProps({
+                          show: true,
+                          title: "Success!",
+                          text: "Thank you for your message!",
+                        })
+                      }}
+                    >
+                      <span>Submit</span>
+                      <ArrowUpwardIcon />
+                    </Button>
+                    <SweetAlert2 {...swalProps} />
+                    <Button
+                      className={styles.submit_form_btn}
+                      onClick={handleClick}
+                    >
+                      <span>Go back</span>
+                      <ChevronLeftIcon />
+                    </Button>
+                  </Form.Group>
                 </Form>
               </div>
             </ReactCardFlip>
           </Col>
-          <Col xs={12} xl={6}>
+          <Col xs={12} md={6}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1317197881317!2d106.79904467585757!3d10.87758478927738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8a415a9d221%3A0x550c2b41569376f9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBRdeG7kWMgVOG6vyAtIMSQ4bqhaSBo4buNYyBRdeG7kWMgZ2lhIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1693893289145!5m2!1svi!2s"
               width="100%"
@@ -191,7 +200,7 @@ function Contact() {
           </Col>
         </Row>
       </Container>
-    </div>
+    </section>
   )
 }
 

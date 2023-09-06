@@ -12,29 +12,48 @@ function Project() {
           <Col>
             <h2>PROJECTS</h2>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              <Nav variant="pills" defaultActiveKey="first">
-                <Nav.Item>
-                  <Nav.Link eventKey="first">Page 1</Nav.Link>
+              <Nav
+                className={styles.nav}
+                variant="pills"
+                defaultActiveKey="first"
+              >
+                <Nav.Item className={styles.navItem}>
+                  <Nav.Link
+                    className={styles.navLink + " " + styles.tab1}
+                    eventKey="first"
+                  >
+                    Page 1
+                  </Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="second">Page 2</Nav.Link>
+                <Nav.Item className={styles.navItem}>
+                  <Nav.Link
+                    className={styles.navLink + " " + styles.tab2}
+                    eventKey="second"
+                  >
+                    Page 2
+                  </Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="third">Page 3</Nav.Link>
+                <Nav.Item className={styles.navItem}>
+                  <Nav.Link
+                    className={styles.navLink + " " + styles.tab3}
+                    eventKey="third"
+                  >
+                    Page 3
+                  </Nav.Link>
                 </Nav.Item>
               </Nav>
-              <Tab.Content>
-                <Tab.Pane eventKey="first">
+              <Tab.Content className={styles.tabContent}>
+                <Tab.Pane className={styles.tabPane} eventKey="first">
                   <Row>
                     {constant.projects.map((project, index) => {
                       return <ProjectCard key={index} {...project} />
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">
+                <Tab.Pane className={styles.tabPane} eventKey="second">
                   <h4>Coming Soon</h4>
                 </Tab.Pane>
-                <Tab.Pane eventKey="third">
+                <Tab.Pane className={styles.tabPane} eventKey="third">
                   <h4>Coming Soon</h4>
                 </Tab.Pane>
               </Tab.Content>

@@ -1,16 +1,24 @@
 {
   "about": [
     {
+      "story": "Đây là tôi tủi 21, không là ai cả nhưng bạn đang ở đây nên hãy nghe về những câu chuyện và con người xung quanh tôi, tôi không dùng ảnh thật vì nó .... xấu, đơn giản là tui ngại ahhh",
       "imgUrl": "./img/about/img_about.png",
-      "desc": "Im 20"
+      "desc": "Im 21"
     },
     {
+      "story": "Đây là bạn bè hiện tại của tui. Bên trái (hơi dìm) là quái vật học bá, bên phải là quái vật siêng năng. Tui còn nhìu bạn nữa chờ tụi nó gửi ảnh update sau nhá !!!",
       "imgUrl": "./img/about/about_friend.jpeg",
       "desc": "Luan and Friends"
     },
     {
-      "imgUrl": "./img/about/img_about.png",
-      "desc": "Im 60"
+      "story": "Hehe, trang này dành cho tình yêu của tôi, chúng tôi yêu nhau từ 02/11/2018, khá lâu rùi nên là cũng hong bik dành lời gì cho cô ấy, I Love U So much <3",
+      "imgUrl": "./img/about/we.jpeg",
+      "desc": "Luan and my love"
+    },
+    {
+      "story": "Vẫn là cô ấy nhưng lần này là ảnh cô ấy đứng 1 mình, thế mới thấy tôi may mắn sao khi được cô ấy thích, quá ư là xinh ahhh <3",
+      "imgUrl": "./img/about/love.jpeg",
+      "desc": "Luan and my love"
     }
   ],
   "experiences": [
@@ -103,7 +111,7 @@
   ],
   "certificate": [
     {
-      "title": "Intermediate JS: Building Front End Components",
+      "title": "Intermediate JS",
       "date": "Mar 2023",
       "author": "Educative",
       "logo": "./img/certificate/Educative.svg",
@@ -112,8 +120,8 @@
     {
       "title": "Certificate 1",
       "date": "2021-08-01",
-      "author": "Codecademy",
-      "logo": "./img/certificate/codecademy.svg",
+      "author": "Cisco",
+      "logo": "./img/certificate/cisco.svg",
       "link": "https://www.educative.io/courses/intermediate-javascript-building-frontend-components"
     },
     {

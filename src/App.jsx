@@ -30,6 +30,7 @@ function App() {
         </div>
         <Navbar />
       </header>
+
       <div className="app_section_container">
         <Home />
         <About />

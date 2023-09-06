@@ -13,9 +13,9 @@ function ProjectCard({
 }) {
   return (
     <Col sm={6} md={4}>
-      <div className="proj_imgbx">
+      <div className={styles.proj_imgbx}>
         <img src={imgUrl} />
-        <div className="proj_txtx">
+        <div className={styles.proj_txtx}>
           <h4>{title}</h4>
           <p>{description}</p>
           <p>{skill}</p>

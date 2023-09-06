@@ -2,16 +2,17 @@ import { useState } from "react"
 import constant from "../../constant.json"
 import PlayArrowIcon from "@mui/icons-material/PlayArrow"
 import styles from "./styles.module.css"
+import { Container, Row, Col } from "react-bootstrap"
 
 function Experience() {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   return (
     <section className={styles.experience} id="experience">
-      <div className={styles.container}>
+      <Container>
         <h2 className={styles.mainTitle}>EXPERIENCE</h2>
-        <div className={styles.outer}>
-          <div className={styles.left}>
+        <Row className={styles.outer}>
+          <Col xs={12} md={4}>
             {constant.experiences.map((experience, index) => (
               <div
                 key={index}
@@ -25,8 +26,8 @@ function Experience() {
                 {experience.company}
               </div>
             ))}
-          </div>
-          <div className={styles.right}>
+          </Col>
+          <Col xs={12} md={8}>
             <h1 className={styles.title}>
               {constant.experiences[currentIndex].title}{" "}
               <a
@@ -46,9 +47,9 @@ function Experience() {
                 <PlayArrowIcon /> {point}
               </p>
             ))}
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </section>
   )
 }

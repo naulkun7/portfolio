@@ -1,24 +1,46 @@
-.skill {
-  &::before {
-    display: block;
-    content: "";
-    margin-top: -120px;
-    height: 120px;
-    visibility: hidden;
-    pointer-events: none;
-  }
+/* ID */
+.skill {}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+
+.certiList {
+  padding: 0 40px;
 }
+
+.certiItem {
+  text-align: left;
+  font-size: var(--fz-xxl);
+  margin-bottom: 30px;
+}
+
+.certiItem a {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: var(--fz-xl);
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.certiItem p {
+  font-size: var(--fz-md);
+  margin-bottom: 0px;
+}
+
+.certiLogo {
+  width: 120px;
+  height: 50px;
+  background: var(--background-certi);
+  border-radius: 10px;
+}
+
+
+
+
+
 
 .skill_bx {
   background: var(--navy);
   border-radius: 64px;
   text-align: center;
-  padding: 40px 80px;
   color: var(--light-slate);
 }
 
@@ -52,31 +74,4 @@
 
 .skill_slider .item {
   font-size: 80px;
-}
-
-
-.certiItem {
-  text-align: left;
-  font-size: var(--fz-xxl);
-  margin-bottom: 30px;
-}
-
-.certiItem a {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: var(--fz-xl);
-  color: var(--green);
-  text-decoration: underline;
-}
-
-.certiItem p {
-  font-size: var(--fz-md);
-  margin-bottom: 0px;
-}
-
-.certiLogo {
-  width: 120px;
-  height: 50px;
-  background: var(--background-certi);
-  border-radius: 10px;
 }

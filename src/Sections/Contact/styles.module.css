@@ -7,11 +7,6 @@
     visibility: hidden;
     pointer-events: none;
   }
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 .container {
@@ -76,6 +71,7 @@
   justify-content: center;
   align-items: start;
   flex-direction: column;
+  text-align: center;
 }
 
 .card_face_back {
@@ -103,4 +99,31 @@
 .social_item a {
   display: inline-block;
   font-size: 40px;
+}
+
+@media (width < 576px) {
+  .card_face_front {
+    align-items: center;
+    justify-content: left;
+  }
+
+  .card_face_back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .submit_form_btn {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .submit_form_btn_group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .row {
+    padding: 20px 0;
+  }
 }

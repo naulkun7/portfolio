@@ -6,7 +6,7 @@ import styles from "./styles.module.css"
 
 function ContactBar() {
   return (
-    <div className={styles.contact_bar_wrapper}>
+    <div id="contactBar" className={styles.contact_bar_wrapper}>
       <div className={styles.contact_bar}>
         <a href="/" target="_blank" className={styles.icon}>
           <LinkedInIcon />

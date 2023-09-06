@@ -23,11 +23,11 @@ function Skills() {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 3,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1,
+      items: 2,
     },
   }
 
@@ -38,10 +38,10 @@ function Skills() {
           <Col className={styles.col}>
             <div className={styles.skill_bx}>
               <h2>SKILLS AND CERTIFICATE</h2>
-              <Row>
+              <Row className={styles.certiList}>
                 {constant.certificate.map((certificate, index) => {
                   return (
-                    <Col key={index} xs={12} md={6}>
+                    <Col key={index} xs={6} md={3}>
                       <div className={styles.certiItem}>
                         <a href={certificate.link} target="_blank">
                           {certificate.title}

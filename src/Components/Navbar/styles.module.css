@@ -1,12 +1,11 @@
 .nav_container {
   width: 100%;
-  height: 90px;
   background-color: var(--navy);
-  box-shadow: var(--navy-shadow);
-  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 90px;
 }
 
 .nav_left {
@@ -17,6 +16,7 @@
   padding-right: 50px;
 }
 
+/* Logo */
 .nav_left>a {
   color: var(--green);
   font-size: var(--fz-xxl);
@@ -35,6 +35,8 @@
   cursor: pointer;
 }
 
+/* End Logo */
+/* Link NAV */
 .nav_link {
   font-size: var(--fz-xl);
   color: var(--lightest-slate);
@@ -51,6 +53,9 @@
   color: var(--green);
 }
 
+/* End Link Nav */
+
+/* Resume BTN */
 .nav_resume_btn {
   outline: none;
   font-size: var(--fz-lg);
@@ -66,3 +71,67 @@
 .nav_resume_btn:hover {
   background-color: var(--green-tint);
 }
+
+/* End Resume Btn */
+
+/* Hamburger Menu */
+.nav_btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: none;
+  color: var(--green);
+  opacity: 0;
+}
+
+.nav_open_btn {
+  padding-right: 50px;
+}
+
+@media (width < 1024px) {
+  .nav_btn {
+    display: block;
+    opacity: 1;
+  }
+
+  .nav_right {
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--navy);
+    transition: 0.7s;
+    transform: translateY(-100vh);
+    text-align: center;
+  }
+
+  .nav_link,
+  .nav_resume_btn {
+
+    margin: 0;
+  }
+
+  .nav_show {
+    transform: none;
+  }
+}
+
+@media (width < 576px) {
+
+  /*     Phone */
+  .nav_left,
+  .nav_open_btn {
+    padding: 10px;
+  }
+}
+
+/* End Menu */
