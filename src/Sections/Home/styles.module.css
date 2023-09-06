@@ -55,6 +55,10 @@
   height: 100%;
 }
 
+.motionHeading {
+  height: 80px;
+}
+
 @media (width < 576px) {
   .home img {
     margin-top: 40px;

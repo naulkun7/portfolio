@@ -53,7 +53,7 @@ function Home() {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7} className={styles.home_content}>
             <span className={styles.tagline}>Welcome to my PORTFOLIO</span>
-            <h1>
+            <h1 className={styles.motionHeading}>
               {`I'm `}
               <span className={styles.wrap}>{text}</span>
             </h1>
