@@ -72,7 +72,7 @@
     {
       "title": "Do not touch your face",
       "description": "A project that I try to connect AI model from Tensorflow and deploy it to web by using React JS.",
-      "skill": "React JS",
+      "skill": "React JS, Tensorflow, AI",
       "imgUrl": "./img/project/main/prj_donttouch.jpg",
       "githubUrl": "https://github.com/naulkun7/do_not_touch_your_face",
       "linkUrl": "https://eheheh.vercel.app/"
@@ -96,12 +96,12 @@
       "linkUrl": "https://barca-gallery.vercel.app/"
     },
     {
-      "title": "Memory Game",
+      "title": "Memory Music Game",
       "description": "My memory is not good so I build this game to train my memory.",
       "skill": "HTML, CSS, JS",
-      "imgUrl": "./img/project/mini/prj_memorygame.jpeg",
-      "githubUrl": "#",
-      "linkUrl": "#"
+      "imgUrl": "./img/project/mini/prj.memorymusic.webp",
+      "githubUrl": "https://github.com/naulkun7/music-memory-game",
+      "linkUrl": "https://memory-music-game.vercel.app/"
     }
   ],
   "projects_other": [
