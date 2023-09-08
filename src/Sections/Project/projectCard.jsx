@@ -20,10 +20,10 @@ function ProjectCard({
           <p>{description}</p>
           <p>{skill}</p>
           <div className={styles.link}>
-            <a href={githubUrl}>
+            <a href={githubUrl} target="_blank">
               <i className="fab fa-github"></i>
             </a>
-            <a href={linkUrl}>
+            <a href={linkUrl} target="_blank">
               <i className="fas fa-link"></i>
             </a>
           </div>

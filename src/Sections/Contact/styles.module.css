@@ -101,6 +101,10 @@
   font-size: 40px;
 }
 
+.zalo svg {
+  color: var(--lightest-slate);
+}
+
 @media (width < 576px) {
   .card_face_front {
     align-items: center;

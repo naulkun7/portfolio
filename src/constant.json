@@ -56,8 +56,8 @@
     {
       "title": "Portfolio",
       "description": "Here is my portfolio, I use React JS to build it.",
-      "skill": "React JS",
-      "imgUrl": "./img/project/rps_prj.png",
+      "skill": "React JS, Bootstrap",
+      "imgUrl": "./img/project/main/prj_portfolio.png",
       "githubUrl": "https://github.com/naulkun7/portfolio",
       "linkUrl": "https://hoangluan.id.vn/"
     },
@@ -65,67 +65,67 @@
       "title": "Rock Paper Scissors",
       "description": "I do not have a server so you can only play on local host right now. Click to the link to see UI",
       "skill": "React JS, Socket IO",
-      "imgUrl": "./img/project/rps_prj.png",
+      "imgUrl": "./img/project/main/prj_rps.png",
       "githubUrl": "https://github.com/naulkun7/rps_game",
       "linkUrl": "https://rps-game-seven.vercel.app/"
     },
     {
-      "title": "",
-      "description": "",
-      "skill": "",
-      "imgUrl": "./img/project/blank_bg.jpg",
-      "githubUrl": "#",
-      "linkUrl": "#"
+      "title": "Do not touch your face",
+      "description": "A project that I try to connect AI model from Tensorflow and deploy it to web by using React JS.",
+      "skill": "React JS",
+      "imgUrl": "./img/project/main/prj_donttouch.jpg",
+      "githubUrl": "https://github.com/naulkun7/do_not_touch_your_face",
+      "linkUrl": "https://eheheh.vercel.app/"
     }
   ],
   "projects_mini": [
     {
-      "title": "",
-      "description": "",
-      "skill": "",
-      "imgUrl": "./img/project/blank_bg.jpg",
-      "githubUrl": "#",
-      "linkUrl": "#"
+      "title": "Tetris Game",
+      "description": "A Game that I build when I learn Data Structure and Algorithm.",
+      "skill": "HTML, CSS, JS",
+      "imgUrl": "./img/project/mini/prj_tetris.webp",
+      "githubUrl": "https://github.com/naulkun7/Tetris-Game",
+      "linkUrl": "https://tetris-game-zeta.vercel.app/"
     },
     {
-      "title": "",
-      "description": "",
-      "skill": "",
-      "imgUrl": "./img/project/blank_bg.jpg",
-      "githubUrl": "#",
-      "linkUrl": "#"
+      "title": "Barca Gallery",
+      "description": "I am fan of Barcelona so I build this website to show my love to Barca.",
+      "skill": "HTML, CSS",
+      "imgUrl": "./img/project/mini/prj_barcagallery.webp",
+      "githubUrl": "https://github.com/naulkun7/barca_gallery",
+      "linkUrl": "https://barca-gallery.vercel.app/"
     },
     {
-      "title": "",
-      "description": "",
-      "skill": "",
-      "imgUrl": "./img/project/blank_bg.jpg",
+      "title": "Memory Game",
+      "description": "My memory is not good so I build this game to train my memory.",
+      "skill": "HTML, CSS, JS",
+      "imgUrl": "./img/project/mini/prj_memorygame.jpeg",
       "githubUrl": "#",
       "linkUrl": "#"
     }
   ],
   "projects_other": [
     {
-      "title": "",
-      "description": "",
-      "skill": "",
-      "imgUrl": "./img/project/blank_bg.jpg",
-      "githubUrl": "#",
+      "title": "Princess Rescue",
+      "description": "A Game that I build when I learn Object Oriented Programming.",
+      "skill": "Java",
+      "imgUrl": "./img/project/other/prj_princess.png",
+      "githubUrl": "https://github.com/william-nguyen128/OOP-Project",
+      "linkUrl": "#"
+    },
+    {
+      "title": "Hospital Database Management Website",
+      "description": "A website for hospital to manage their data. I build it when I learn Software Engineering.",
+      "skill": "PHP, MySQL",
+      "imgUrl": "./img/project/other/prj_hospital.jpg",
+      "githubUrl": "https://github.com/naulkun7/Hospital-Management-System-Web",
       "linkUrl": "#"
     },
     {
       "title": "",
       "description": "",
       "skill": "",
-      "imgUrl": "./img/project/blank_bg.jpg",
-      "githubUrl": "#",
-      "linkUrl": "#"
-    },
-    {
-      "title": "",
-      "description": "",
-      "skill": "",
-      "imgUrl": "./img/project/blank_bg.jpg",
+      "imgUrl": "./img/project/other/prj_blank.jpg",
       "githubUrl": "#",
       "linkUrl": "#"
     }
@@ -133,32 +133,33 @@
 
   "certificate": [
     {
-      "title": "Intermediate JS",
+      "title": "Intermediate JavaScript: Building Frontend Components",
       "date": "Mar 2023",
       "author": "Educative",
       "logo": "./img/certificate/Educative.svg",
       "link": "https://www.educative.io/verify-certificate/DR5gxyCn6GOX9znJXcRXvRNEjAYEcG"
     },
     {
-      "title": "Certificate 1",
-      "date": "2021-08-01",
+      "title": "CCNA: Switching, Routing, and Wireless Essentials",
+      "date": "Jan 2023",
       "author": "Cisco",
       "logo": "./img/certificate/cisco.svg",
-      "link": "https://www.educative.io/courses/intermediate-javascript-building-frontend-components"
+      "link": "https://www.credly.com/badges/d0ef04b6-d0a6-43ec-a1b8-b4e18ebfd1d9/linked_in_profile"
     },
     {
-      "title": "Certificate 1",
-      "date": "2021-08-01",
+      "title": "CCNA: Introduction to Networks",
+      "date": "Dec 2022",
       "author": "Cisco",
       "logo": "./img/certificate/cisco.svg",
-      "link": "https://www.educative.io/courses/intermediate-javascript-building-frontend-components"
+      "link": "https://www.credly.com/badges/2a99fae9-6c09-4095-9a30-cd47f2fa1e40/linked_in_profile"
     },
+
     {
-      "title": "Certificate 1",
+      "title": "Create a Front-End App with React",
       "date": "2021-08-01",
-      "author": "Cisco",
-      "logo": "./img/certificate/cisco.svg",
-      "link": "https://www.educative.io/courses/intermediate-javascript-building-frontend-components"
+      "author": "Codecademy",
+      "logo": "./img/certificate/codecademy.svg",
+      "link": "hhttps://www.codecademy.com/enrolled/paths/build-web-apps-with-react"
     }
   ]
 }

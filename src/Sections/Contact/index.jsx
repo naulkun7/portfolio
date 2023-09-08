@@ -14,6 +14,8 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft"
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward"
 import SendIcon from "@mui/icons-material/Send"
 
+import ZaloIcon from "../../asset/icons/zalo"
+
 function Contact() {
   // Flip card
   const [isFlipped, setIsFlipped] = useState(false)
@@ -104,7 +106,7 @@ function Contact() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <i className="fa-solid fa-z"></i>
+                      Z
                     </a>
                   </li>
                 </ul>

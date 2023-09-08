@@ -2,7 +2,6 @@ import { useState, useEffect } from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight"
 import styles from "./styles.module.css"
-import { green } from "@mui/material/colors"
 
 function Home() {
   const [loopNum, setLoopNum] = useState(0)
@@ -62,7 +61,7 @@ function Home() {
               Hello, my name is <b>Nguyễn Hoàng Luân</b>, and you've landed on
               my portfolio. Let me share some important details about myself.
               I'm a last-year student, majoring in Information Technology at
-              <a href="">
+              <a href="https://hcmiu.edu.vn/en/" target="_blank">
                 <b> International University (VNU-HCMC) </b>
               </a>
               new challenges and expanding my knowledge. If you have any

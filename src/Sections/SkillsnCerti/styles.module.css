@@ -7,17 +7,18 @@
 }
 
 .certiItem {
-  text-align: left;
+  text-align: center;
   font-size: var(--fz-xxl);
   margin-bottom: 30px;
 }
 
-.certiItem a {
+.certiItem h4 {
   margin-bottom: 10px;
   font-weight: 500;
-  font-size: var(--fz-xl);
+  font-size: var(--fz-xxl);
   color: var(--green);
   text-decoration: underline;
+  text-wrap: balance;
 }
 
 .certiItem p {
@@ -32,10 +33,15 @@
   border-radius: 10px;
 }
 
-
-
-
-
+hr {
+  border: 0;
+  height: 2px;
+  width: 70%;
+  position: relative;
+  margin: 30px auto;
+  background-color: var(--light-slate);
+  color: var(--light-slate);
+}
 
 .skill_bx {
   background: var(--navy);

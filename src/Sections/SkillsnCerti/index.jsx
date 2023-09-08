@@ -5,10 +5,13 @@ import "react-multi-carousel/lib/styles.css"
 import constant from "../../constant.json"
 
 // Icons
-import ReactIcon from "./icons/react.jsx"
-import HTMLIcon from "./icons/html.jsx"
-import CSSIcon from "./icons/css3.jsx"
-import JSIcon from "./icons/js.jsx"
+import ReactIcon from "../../asset/icons/react.jsx"
+import HTMLIcon from "../../asset/icons/html.jsx"
+import CSSIcon from "../../asset/icons/css3.jsx"
+import JSIcon from "../../asset/icons/js.jsx"
+import NodeIcon from "../../asset/icons/nodejs.jsx"
+import BootstrapIcon from "../../asset/icons/bootstrap.jsx"
+import MongoDB from "../../asset/icons/mongodb.jsx"
 
 function Skills() {
   const responsive = {
@@ -41,11 +44,13 @@ function Skills() {
               <Row className={styles.certiList}>
                 {constant.certificate.map((certificate, index) => {
                   return (
-                    <Col key={index} xs={6} md={3}>
+                    <Col key={index} xs={12} md={6}>
                       <div className={styles.certiItem}>
-                        <a href={certificate.link} target="_blank">
-                          {certificate.title}
-                        </a>
+                        <h4>
+                          <a href={certificate.link} target="_blank">
+                            {certificate.title}
+                          </a>
+                        </h4>
                         <p>
                           Issued: {certificate.date}
                           <br />
@@ -61,6 +66,7 @@ function Skills() {
                   )
                 })}
               </Row>
+              <hr className={styles.center_star}></hr>
               <Carousel
                 responsive={responsive}
                 infinite={true}
@@ -75,19 +81,31 @@ function Skills() {
               >
                 <div className={styles.item}>
                   <HTMLIcon />
-                  <h5>HTML</h5>
+                  <h5>HTML5</h5>
                 </div>
                 <div className={styles.item}>
                   <CSSIcon />
-                  <h5>CSS</h5>
+                  <h5>CSS3</h5>
                 </div>
                 <div className={styles.item}>
                   <JSIcon />
-                  <h5>JS</h5>
+                  <h5>Javascript</h5>
                 </div>
                 <div className={styles.item}>
                   <ReactIcon />
                   <h5>React JS</h5>
+                </div>
+                <div className={styles.item}>
+                  <BootstrapIcon />
+                  <h5>Bootstrap</h5>
+                </div>
+                <div className={styles.item}>
+                  <NodeIcon />
+                  <h5>Node JS</h5>
+                </div>
+                <div className={styles.item}>
+                  <MongoDB />
+                  <h5>MongoDB</h5>
                 </div>
               </Carousel>
             </div>
