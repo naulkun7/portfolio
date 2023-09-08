@@ -91,6 +91,9 @@ section {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.container {
   z-index: 50;
 }
 
