@@ -22,7 +22,7 @@ function Project() {
                     className={styles.navLink + " " + styles.tab1}
                     eventKey="first"
                   >
-                    Page 1
+                    Main
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item className={styles.navItem}>
@@ -30,7 +30,7 @@ function Project() {
                     className={styles.navLink + " " + styles.tab2}
                     eventKey="second"
                   >
-                    Page 2
+                    Mini
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item className={styles.navItem}>
@@ -38,7 +38,7 @@ function Project() {
                     className={styles.navLink + " " + styles.tab3}
                     eventKey="third"
                   >
-                    Page 3
+                    Other
                   </Nav.Link>
                 </Nav.Item>
               </Nav>
@@ -51,10 +51,18 @@ function Project() {
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane className={styles.tabPane} eventKey="second">
-                  <h4>Coming Soon</h4>
+                  <Row>
+                    {constant.projects_mini.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />
+                    })}
+                  </Row>
                 </Tab.Pane>
                 <Tab.Pane className={styles.tabPane} eventKey="third">
-                  <h4>Coming Soon</h4>
+                  <Row>
+                    {constant.projects_other.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />
+                    })}
+                  </Row>
                 </Tab.Pane>
               </Tab.Content>
             </Tab.Container>

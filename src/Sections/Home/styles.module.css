@@ -9,6 +9,10 @@
   color: var(--light-navy);
 }
 
+.home .info b {
+  color: var(--green);
+}
+
 .home h1 {
   font-size: var(--fz-heading);
   font-weight: 700;
@@ -26,7 +30,7 @@
   text-align: justify;
 }
 
-.home button {
+.home .btn {
   outline: none;
   background: transparent;
   border: 1px solid var(--green);
@@ -36,16 +40,17 @@
   display: flex;
   align-items: center;
   padding-left: 10px;
+  width: fit-content;
 }
 
-.home button svg {
+.home .btn svg {
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
 
-.home button:hover svg {
+.home .btn:hover svg {
   margin-left: 25px;
 }
 

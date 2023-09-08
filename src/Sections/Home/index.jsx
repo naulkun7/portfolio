@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight"
 import styles from "./styles.module.css"
+import { green } from "@mui/material/colors"
 
 function Home() {
   const [loopNum, setLoopNum] = useState(0)
@@ -57,16 +58,27 @@ function Home() {
               {`I'm `}
               <span className={styles.wrap}>{text}</span>
             </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quasi
-              enim molestiae labore iste exercitationem iusto impedit itaque?
-              Expedita veniam, corporis sed aperiam perferendis repudiandae
-              iusto voluptatem dignissimos voluptates cumque!
+            <p className={styles.info}>
+              Hello, my name is <b>Nguyễn Hoàng Luân</b>, and you've landed on
+              my portfolio. Let me share some important details about myself.
+              I'm a last-year student, majoring in Information Technology at
+              <a href="">
+                <b> International University (VNU-HCMC) </b>
+              </a>
+              new challenges and expanding my knowledge. If you have any
+              projects or ideas that align with
+              <a href="#skills">
+                <b>
+                  <i> my skills</i>
+                </b>
+              </a>
+              , don't hesitate to reach out you. I'm eager to engage in
+              conversations and explore opportunities with you.
             </p>
-            <button onClick={() => console.log("Connect")}>
-              Let's Connect
+            <a className={styles.btn} href="#contact">
+              Contact me
               <KeyboardArrowRightIcon size={25}></KeyboardArrowRightIcon>
-            </button>
+            </a>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <div>
