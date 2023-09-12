@@ -6,10 +6,6 @@
   font-family: var(--font-sans);
 }
 
-.proj_txtx h4 {
-  margin-bottom: 10px;
-}
-
 .project p {
   color: var(--light-slate);
   font-size: 18px;
@@ -131,6 +127,7 @@
   font-size: 30px;
   font-weight: 700;
   line-height: 1.1em;
+  margin-bottom: 10px;
 }
 
 .proj_txtx p {
