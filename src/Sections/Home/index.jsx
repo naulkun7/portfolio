@@ -81,7 +81,12 @@ function Home() {
           </Col>
           <Col xs={12} md={6} xl={5}>
             <div>
-              <img src={"./img/home/header.jpeg"} alt="header img" />
+              <img
+                srcSet="./img/home/header-100x100.jpeg 100w, ./img/home/header-200x200.jpeg 200w, ./img/home/header-400x400.jpeg 400w"
+                sizes="(max-width: 575px) 100px, (max-width: 991px) 200px, 400px"
+                src={"./img/home/header-400x400.jpeg"}
+                alt="home-img"
+              />
             </div>
           </Col>
         </Row>
