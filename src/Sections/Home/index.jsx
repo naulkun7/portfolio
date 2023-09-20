@@ -64,14 +64,14 @@ function Home() {
               <a href="https://hcmiu.edu.vn/en/" target="_blank">
                 <b> International University (VNU-HCMC) </b>
               </a>
-              new challenges and expanding my knowledge. If you have any
-              projects or ideas that align with
+              . I'm enthusiastic about taking on new challenges and expanding my
+              knowledge. If you have any projects or ideas that align with
               <a href="#skills">
                 <b>
                   <i> my skills</i>
                 </b>
               </a>
-              , don't hesitate to reach out you. I'm eager to engage in
+              , don't hesitate to reach out. I'm eager to engage in
               conversations and explore opportunities with you.
             </p>
             <a className={styles.btn} href="#contact">
