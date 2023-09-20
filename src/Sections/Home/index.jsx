@@ -62,7 +62,7 @@ function Home() {
               my portfolio. Let me share some important details about myself.
               I'm a last-year student, majoring in Information Technology at
               <a href="https://hcmiu.edu.vn/en/" target="_blank">
-                <b> International University (VNU-HCMC) </b>
+                <b> International University (VNU-HCMC)</b>
               </a>
               . I'm enthusiastic about taking on new challenges and expanding my
               knowledge. If you have any projects or ideas that align with
