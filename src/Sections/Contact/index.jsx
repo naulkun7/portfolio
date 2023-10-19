@@ -13,8 +13,7 @@ import SweetAlert2 from "react-sweetalert2"
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft"
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward"
 import SendIcon from "@mui/icons-material/Send"
-
-import ZaloIcon from "../../asset/icons/zalo"
+import { SiZalo } from "react-icons/si"
 
 function Contact() {
   // Flip card
@@ -22,6 +21,9 @@ function Contact() {
   const handleClick = () => {
     setIsFlipped(!isFlipped)
   }
+
+  // SweetAlert2
+  const [swalProps, setSwalProps] = useState({})
 
   // Send email
   const form = useRef()
@@ -39,15 +41,17 @@ function Contact() {
         (result) => {
           console.log(result.text)
           console.log("Send email successfully!")
+          setSwalProps({
+            show: true,
+            title: "Success!",
+            text: "Thank you for your message!",
+          })
         },
         (error) => {
           console.log(error.text)
         }
       )
   }
-
-  // SweetAlert2
-  const [swalProps, setSwalProps] = useState({})
 
   return (
     <section className={styles.contact} id="contact">
@@ -106,7 +110,7 @@ function Contact() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Z
+                      <SiZalo />
                     </a>
                   </li>
                 </ul>
@@ -127,6 +131,7 @@ function Contact() {
                       name="user_name"
                       type="text"
                       placeholder="Full Name"
+                      required
                     />
                     <Form.Text className={styles.span}>
                       I'll never share your information with anyone else.
@@ -138,6 +143,7 @@ function Contact() {
                       name="user_email"
                       type="email"
                       placeholder="Enter email"
+                      required
                     />
                   </Form.Group>
                   <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -146,6 +152,7 @@ function Contact() {
                       name="message_subject"
                       type="text"
                       placeholder="Subject"
+                      required
                     />
                   </Form.Group>
                   <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -155,6 +162,7 @@ function Contact() {
                       as="textarea"
                       placeholder="Message"
                       rows={3}
+                      required
                     />
                   </Form.Group>
                   <Form.Group
@@ -166,13 +174,6 @@ function Contact() {
                       variant="primary"
                       type="submit"
                       value="Send"
-                      onClick={() => {
-                        setSwalProps({
-                          show: true,
-                          title: "Success!",
-                          text: "Thank you for your message!",
-                        })
-                      }}
                     >
                       <span>Submit</span>
                       <ArrowUpwardIcon />
