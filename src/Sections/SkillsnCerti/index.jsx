@@ -1,17 +1,17 @@
-import { Container, Row, Col } from "react-bootstrap"
-import styles from "./styles.module.css"
-import Carousel from "react-multi-carousel"
-import "react-multi-carousel/lib/styles.css"
-import constant from "../../constant.json"
+import { Container, Row, Col } from "react-bootstrap";
+import styles from "./styles.module.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import constant from "../../constant.json";
 
 // Icons
-import ReactIcon from "../../asset/icons/react.jsx"
-import HTMLIcon from "../../asset/icons/html.jsx"
-import CSSIcon from "../../asset/icons/css3.jsx"
-import JSIcon from "../../asset/icons/js.jsx"
-import NodeIcon from "../../asset/icons/nodejs.jsx"
-import BootstrapIcon from "../../asset/icons/bootstrap.jsx"
-import MongoDB from "../../asset/icons/mongodb.jsx"
+import ReactIcon from "../../asset/icons/react.jsx";
+import HTMLIcon from "../../asset/icons/html.jsx";
+import CSSIcon from "../../asset/icons/css3.jsx";
+import JSIcon from "../../asset/icons/js.jsx";
+import NodeIcon from "../../asset/icons/nodejs.jsx";
+import BootstrapIcon from "../../asset/icons/bootstrap.jsx";
+import MongoDB from "../../asset/icons/mongodb.jsx";
 
 function Skills() {
   const responsive = {
@@ -32,7 +32,7 @@ function Skills() {
       breakpoint: { max: 464, min: 0 },
       items: 2,
     },
-  }
+  };
 
   return (
     <section className={styles.skill} id="skills">
@@ -46,11 +46,15 @@ function Skills() {
                   return (
                     <Col key={index} xs={12} md={6}>
                       <div className={styles.certiItem}>
-                        <h4>
-                          <a href={certificate.link} target="_blank">
+                        <h3>
+                          <a
+                            href={certificate.link}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                          >
                             {certificate.title}
                           </a>
-                        </h4>
+                        </h3>
                         <p>
                           Issued: {certificate.date}
                           <br />
@@ -63,7 +67,7 @@ function Skills() {
                         />
                       </div>
                     </Col>
-                  )
+                  );
                 })}
               </Row>
               <hr className={styles.center_star}></hr>
@@ -113,7 +117,7 @@ function Skills() {
         </Row>
       </Container>
     </section>
-  )
+  );
 }
 
-export default Skills
+export default Skills;

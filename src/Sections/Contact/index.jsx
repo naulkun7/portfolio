@@ -1,34 +1,34 @@
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
 
 // React
-import React, { useState, useRef } from "react"
-import Button from "react-bootstrap/Button"
-import Form from "react-bootstrap/Form"
-import { Container, Row, Col } from "react-bootstrap"
-import ReactCardFlip from "react-card-flip"
-import emailjs from "@emailjs/browser"
-import SweetAlert2 from "react-sweetalert2"
+import { useState, useRef } from "react";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import { Container, Row, Col } from "react-bootstrap";
+import ReactCardFlip from "react-card-flip";
+import emailjs from "@emailjs/browser";
+import SweetAlert2 from "react-sweetalert2";
 
 // Icon
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft"
-import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward"
-import SendIcon from "@mui/icons-material/Send"
-import { SiZalo } from "react-icons/si"
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import SendIcon from "@mui/icons-material/Send";
+import { SiZalo } from "react-icons/si";
 
 function Contact() {
   // Flip card
-  const [isFlipped, setIsFlipped] = useState(false)
+  const [isFlipped, setIsFlipped] = useState(false);
   const handleClick = () => {
-    setIsFlipped(!isFlipped)
-  }
+    setIsFlipped(!isFlipped);
+  };
 
   // SweetAlert2
-  const [swalProps, setSwalProps] = useState({})
+  const [swalProps, setSwalProps] = useState({});
 
   // Send email
-  const form = useRef()
+  const form = useRef();
   const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     emailjs
       .sendForm(
@@ -39,19 +39,19 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text)
-          console.log("Send email successfully!")
+          console.log(result.text);
+          console.log("Send email successfully!");
           setSwalProps({
             show: true,
             title: "Success!",
             text: "Thank you for your message!",
-          })
+          });
         },
         (error) => {
-          console.log(error.text)
+          console.log(error.text);
         }
-      )
-  }
+      );
+  };
 
   return (
     <section className={styles.contact} id="contact">
@@ -69,12 +69,18 @@ function Contact() {
                 <h3>NGUYEN HOANG LUAN</h3>
                 <p>
                   Email:{" "}
-                  <a href="mailto:luannguyenn.2k2@gmail.com">
+                  <a
+                    href="mailto:luannguyenn.2k2@gmail.com"
+                    aria-label="Peronal Mail"
+                  >
                     luannguyenn.2k2@gmail.com
                   </a>
                 </p>
                 <p>
-                  Phone: <a href="tel:+84989807564">(+84)98 980 7564</a>
+                  Phone:{" "}
+                  <a href="tel:+84989807564" aria-label="Peronal Phone Number">
+                    (+84)98 980 7564
+                  </a>
                 </p>
                 <ul className={styles.social}>
                   <li className={styles.social_item}>
@@ -82,6 +88,7 @@ function Contact() {
                       href="https://www.facebook.com/luan.nguyen.007/"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="Facebook"
                     >
                       <i className="fab fa-facebook-f"></i>
                     </a>
@@ -91,6 +98,7 @@ function Contact() {
                       href="https://github.com/naulkun7"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="GitHub"
                     >
                       <i className="fab fa-github"></i>
                     </a>
@@ -100,6 +108,7 @@ function Contact() {
                       href="https://www.linkedin.com/in/luannguyen-2k2/"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="LinkedIn"
                     >
                       <i className="fab fa-linkedin-in"></i>
                     </a>
@@ -134,7 +143,7 @@ function Contact() {
                       required
                     />
                     <Form.Text className={styles.span}>
-                      I'll never share your information with anyone else.
+                      I will never share your information with anyone else.
                     </Form.Text>
                   </Form.Group>
                   <Form.Group className="mb-2" controlId="formBasicEmail">
@@ -193,18 +202,19 @@ function Contact() {
           </Col>
           <Col xs={12} md={6}>
             <iframe
+              title="Working Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1317197881317!2d106.79904467585757!3d10.87758478927738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8a415a9d221%3A0x550c2b41569376f9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBRdeG7kWMgVOG6vyAtIMSQ4bqhaSBo4buNYyBRdeG7kWMgZ2lhIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1693893289145!5m2!1svi!2s"
               width="100%"
               height="100%"
               className={styles.map}
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </Col>
         </Row>
       </Container>
     </section>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

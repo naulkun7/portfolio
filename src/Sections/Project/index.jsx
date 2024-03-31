@@ -1,8 +1,7 @@
-// import projImg1 from "./img/rps_prj.png"
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap"
-import styles from "./styles.module.css"
-import constant from "../../constant.json"
-import ProjectCard from "./projectCard"
+import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import styles from "./styles.module.css";
+import constant from "../../constant.json";
+import ProjectCard from "./projectCard";
 
 function Project() {
   return (
@@ -46,21 +45,21 @@ function Project() {
                 <Tab.Pane className={styles.tabPane} eventKey="first">
                   <Row>
                     {constant.projects.map((project, index) => {
-                      return <ProjectCard key={index} {...project} />
+                      return <ProjectCard key={index} {...project} />;
                     })}
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane className={styles.tabPane} eventKey="second">
                   <Row>
                     {constant.projects_mini.map((project, index) => {
-                      return <ProjectCard key={index} {...project} />
+                      return <ProjectCard key={index} {...project} />;
                     })}
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane className={styles.tabPane} eventKey="third">
                   <Row>
                     {constant.projects_other.map((project, index) => {
-                      return <ProjectCard key={index} {...project} />
+                      return <ProjectCard key={index} {...project} />;
                     })}
                   </Row>
                 </Tab.Pane>
@@ -70,7 +69,7 @@ function Project() {
         </Row>
       </Container>
     </section>
-  )
+  );
 }
 
-export default Project
+export default Project;

@@ -1,51 +1,51 @@
-import { useState, useEffect } from "react"
-import { Container, Row, Col } from "react-bootstrap"
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight"
-import styles from "./styles.module.css"
+import { useState, useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import styles from "./styles.module.css";
 
 function Home() {
-  const [loopNum, setLoopNum] = useState(0)
-  const [isDeleting, setIsDeleting] = useState(false)
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
     "Front End Developer",
     "Full Stack Developer",
     "Back End Developer",
-  ]
-  const [text, setText] = useState("")
-  const [delta, setDelta] = useState(300 - Math.random() * 100)
-  const period = 2000
+  ];
+  const [text, setText] = useState("");
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const period = 2000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
-      tick()
-    }, delta)
+      tick();
+    }, delta);
 
     return () => {
-      clearInterval(ticker)
-    }
-  }, [text])
+      clearInterval(ticker);
+    };
+  }, [text]);
 
   const tick = () => {
-    let i = loopNum % toRotate.length
-    let fullText = toRotate[i]
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
     let updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1)
+      : fullText.substring(0, text.length + 1);
 
-    setText(updatedText)
+    setText(updatedText);
 
     if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2)
+      setDelta((prevDelta) => prevDelta / 2);
     }
     if (!isDeleting && updatedText === fullText) {
-      setDelta(period)
-      setIsDeleting(true)
+      setDelta(period);
+      setIsDeleting(true);
     } else if (isDeleting && updatedText === "") {
-      setIsDeleting(false)
-      setLoopNum(loopNum + 1)
-      setDelta(500)
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setDelta(500);
     }
-  }
+  };
 
   return (
     <section className={styles.home} id="home">
@@ -58,21 +58,28 @@ function Home() {
               <span className={styles.wrap}>{text}</span>
             </h1>
             <p className={styles.info}>
-              Hello, my name is <b>Nguyễn Hoàng Luân</b>, and you've landed on
-              my portfolio. Let me share some important details about myself.
-              I'm a last-year student, majoring in Information Technology at
-              <a href="https://hcmiu.edu.vn/en/" target="_blank">
+              Hello, my name is <b>Nguyễn Hoàng Luân</b>, and you&apos;ve landed
+              on my portfolio. Let me share some important details about myself.
+              I&apos;m a last-year student, majoring in Information Technology
+              at{""}
+              <a
+                href="https://hcmiu.edu.vn/en/"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="International University"
+              >
                 <b> International University (VNU-HCMC)</b>
               </a>
-              . I'm enthusiastic about taking on new challenges and expanding my
-              knowledge. If you have any projects or ideas that align with
+              {""}. I&apos;m enthusiastic about taking on new challenges and
+              expanding my knowledge. If you have any projects or ideas that
+              align with
               <a href="#skills">
                 <b>
                   <i> my skills</i>
                 </b>
               </a>
-              , don't hesitate to reach out. I'm eager to engage in
-              conversations and explore opportunities with you.
+              {""}, don&apos;t hesitate to reach out. I&apos;m eager to engage
+              in conversations and explore opportunities with you.
             </p>
             <a className={styles.btn} href="#contact">
               Contact me
@@ -92,7 +99,7 @@ function Home() {
         </Row>
       </Container>
     </section>
-  )
+  );
 }
 
-export default Home
+export default Home;

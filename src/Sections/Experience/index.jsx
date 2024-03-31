@@ -1,11 +1,11 @@
-import { useState } from "react"
-import constant from "../../constant.json"
-import PlayArrowIcon from "@mui/icons-material/PlayArrow"
-import styles from "./styles.module.css"
-import { Container, Row, Col } from "react-bootstrap"
+import { useState } from "react";
+import constant from "../../constant.json";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import styles from "./styles.module.css";
+import { Container, Row, Col } from "react-bootstrap";
 
 function Experience() {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
     <section className={styles.experience} id="experience">
@@ -14,7 +14,7 @@ function Experience() {
         <Row className={styles.outer}>
           <Col xs={12} md={4}>
             {constant.experiences.map((experience, index) => (
-              <div
+              <button
                 key={index}
                 className={
                   index === currentIndex
@@ -22,9 +22,10 @@ function Experience() {
                     : `${styles.tab}`
                 }
                 onClick={() => setCurrentIndex(index)}
+                tabIndex={0}
               >
                 {experience.company}
-              </div>
+              </button>
             ))}
           </Col>
           <Col xs={12} md={8}>
@@ -34,7 +35,8 @@ function Experience() {
                 className={styles.link}
                 href={constant.experiences[currentIndex].link}
                 target="_blank"
-                rel="noreferrer"
+                rel="noreferrer noopener"
+                aria-label="Company's website"
               >
                 @ {constant.experiences[currentIndex].company}
               </a>
@@ -51,7 +53,7 @@ function Experience() {
         </Row>
       </Container>
     </section>
-  )
+  );
 }
 
-export default Experience
+export default Experience;
